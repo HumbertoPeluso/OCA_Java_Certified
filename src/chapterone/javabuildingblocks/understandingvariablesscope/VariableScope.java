@@ -20,3 +20,18 @@ public class VariableScope {
        // System.out.println(bitesOfCheese);// DOES NOT COMPILE
     }
 }
+
+    /*     Local variables—in scope from declaration to end of block
+        ■ Instance variables—in scope from declaration until object garbage collected (until Mouse object exists)
+        ■ Class variables—in scope from declaration until program ends*/
+
+class Mouse{
+    static int MAX_LENGHT = 5; //class variable
+    int lenght; // instance variable
+
+    public void grow(int inches){ // inches -> local variable
+        if(lenght<MAX_LENGHT){
+            int newSize = lenght + inches; // newSize -> local variable
+        }
+    }
+}

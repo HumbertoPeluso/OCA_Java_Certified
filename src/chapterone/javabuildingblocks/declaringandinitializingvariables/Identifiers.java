@@ -5,7 +5,7 @@ public class Identifiers {
             ■ The name must begin with a letter or the symbol $ or _.
             ■ Subsequent characters may also be numbers.
             ■ You cannot use the same name as a Java reserved word.*/
-    public static void main(String[] args) {
+    public static void main(String... args) {
 
         //Valid identifiers
         String okidentifier;
