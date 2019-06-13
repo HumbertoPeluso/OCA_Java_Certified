@@ -15,7 +15,7 @@ public class NumericPromotion {
         long y1 = 33;
 
        // int result = x1*y1; // not compile
-        long result1 = x1*1;
+        long result1 = x1*y1;
 
         double x2 = 39.21;
        // float y2 = 2.1;  //fl foating-point literals are assumed to be double, unless postfixed with an f, as in 2.1f
