@@ -8,7 +8,7 @@ public class TernaryOperator {
 
     public static void main(String[] args) {
 
-        /*The fi rst operand must be a boolean expression, and the second and third can be any
+        /*The first operand must be a boolean expression, and the second and third can be any
         expression that returns a value. The ternary operation is really a condensed form of an ifthen-else statement that returns a value. For example, the following two snippets of code
         are equivalent:*/
 

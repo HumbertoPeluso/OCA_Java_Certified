@@ -2,7 +2,7 @@ package chaptertwo.operatorsandstatements.usingadditionalbinaryoperators;
 
 public class LogicalOperators {
 
-    public static void main (String[]args){
+    public static void main(String[] args) {
 
         boolean a, b;
 
@@ -21,6 +21,12 @@ public class LogicalOperators {
         int x = 6;
         boolean y = (x >= 6) || (++x <= 7);
         System.out.println(x);
+
+        boolean x2 = true, z2 = true;
+        int y2 = 20;
+        x2 = (y2 != 10) ^ (z2 = false);
+        System.out.println(x2 + ", " + y2 + ", " + z2);
+
 
     }
 }

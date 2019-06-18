@@ -1,7 +1,7 @@
 package chaptertwo.operatorsandstatements.usingadditionalbinaryoperators;
 
 public class CastingPrimitiveValues {
-   /* We can fi x the examples in the previous section by casting the results to a smaller data
+   /* We can fix the examples in the previous section by casting the results to a smaller data
     type. Casting primitives is required any time you are going from a larger numerical data
     type to a smaller numerical data type, or converting from a fl oating-point number to an
     integral value*/
