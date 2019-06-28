@@ -19,8 +19,8 @@ public class CreatingAnArrayWithReferenceVariables {
          String[] againStrings = (String[]) objects; //  a cast is needed because we are moving to a more specifi c type
         // againStrings[0] = new StringBuilder(); // DOES NOT COMPILE -- doesn’t compile because a String[] only allows String objects and
         //StringBuilder is not a String.
-         /*objects[0] = new StringBuilder(); // careful! --  From the point of view of the compiler, this is just
-        fi ne. A StringBuilder object can clearly go in an Object[]. The problem is that we don’t
+         objects[0] = new StringBuilder(); // careful! --  From the point of view of the compiler, this is just
+        /*fi ne. A StringBuilder object can clearly go in an Object[]. The problem is that we don’t
         actually have an Object[]. We have a String[] referred to from an Object[] variable. At
         runtime, the code throws an ArrayStoreException. You don’t need to memorize the name
         of this exception, but you do need to know that the code will throw an exception.*/

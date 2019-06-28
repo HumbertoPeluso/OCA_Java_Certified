@@ -7,7 +7,7 @@ public class CreatingAnArrayList {
     public static void main(String[]args){
        // there are three ways to create an ArrayList:
         ArrayList list1 = new ArrayList(); // says to create an ArrayList containing space for the default number of
-                                          //elements but not to fi ll any slots yet
+                                          //elements but not to fill any slots yet
 
         ArrayList list2 = new ArrayList(10); // create an ArrayList containing a specifi c number of slots, but again not to assign any
 

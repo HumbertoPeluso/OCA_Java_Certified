@@ -10,7 +10,7 @@ public class UnderstandingEquality {
         StringBuilder two = new StringBuilder();
         StringBuilder three = one.append("a");
         System.out.println(one == two); // false
-        System.out.println(one == three); // true
+        System.out.println(one == three); // true -- because StringBuilder is mutable
 
         String x = "Hello World";
         String y = "Hello World";
