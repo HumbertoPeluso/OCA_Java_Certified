@@ -42,6 +42,10 @@ public class ImportantStringBuilderMethods {
         sb4.delete(1, 3); // sb = adef
        // sb4.deleteCharAt(5); // throws an exception
 
+        System.out.println(sb4);
+        System.out.println();
+        System.out.println("...................");
+
       //  reverse()
         /*After all that, it’s time for a nice, easy method. The reverse() method does just what it
         sounds like: it reverses the characters in the sequences and returns a reference to the current

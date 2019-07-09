@@ -1,5 +1,7 @@
 package chapterthree.corejavaapis.understandingjavaarrays;
 
+import java.util.ArrayList;
+
 public class MultidimensionalArrays {
     public static void main(String[] args) {
 
@@ -39,6 +41,7 @@ public class MultidimensionalArrays {
         //Using a Multidimensional Array
         int[][] twoD = new int[3][2];
         print2DArray(twoD);
+        ArrayList x = new ArrayList();
 
     }
 
