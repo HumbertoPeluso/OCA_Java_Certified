@@ -1,6 +1,8 @@
 package chapterthree.corejavaapis.understandingarraylist;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class UsingAnArrayList {
@@ -48,6 +50,11 @@ public class UsingAnArrayList {
          birds3.set(0, "robin"); // [robin]
          System.out.println(birds3.size()); // 1
          birds3.set(1, "robin"); // IndexOutOfBoundsException
+
+        List<Integer> list2 = Arrays.asList(10, 4, -1, 5);
+         Collections.sort(list2);
+         Integer array[] = list2.toArray(new Integer[4]);
+         System.out.println(array[0]);
 
 
       //  isEmpty() and size()
