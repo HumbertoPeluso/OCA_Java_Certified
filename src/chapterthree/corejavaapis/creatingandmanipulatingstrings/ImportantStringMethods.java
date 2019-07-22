@@ -10,9 +10,6 @@ public class ImportantStringMethods {
 
         System.out.println("................");
 
-        /*charAt()
-        The method charAt() lets you query the string to fi nd out what character is at a specifi c
-        index. The method signature is as follows:*/
 
         String string2 = "animals";
         System.out.println(string2.charAt(0)); // a

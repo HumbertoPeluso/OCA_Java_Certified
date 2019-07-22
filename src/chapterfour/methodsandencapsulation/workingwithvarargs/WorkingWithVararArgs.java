@@ -8,17 +8,28 @@ public class WorkingWithVararArgs {
         have one vararg parameter per method.
         */
 
+      //  walk(); DOES NOT COMPILE
         walk(1); // 0
         walk(1, 2); // 1
         walk(1, 2, 3); // 2
         walk(1, new int[]{4, 5}); // 2
 
+        System.out.println(".............");
+
+        walk1();
+        walk1(1); // 1
+        walk1(1, 2); // 2
+        walk1(1, 2, 3); // 3
+     //   walk1(1, new int[]{4, 5}); // 2
+
     }
 
-    public void walk1(int... nums) {
+    public static void walk1(int... nums) {
+        System.out.println(nums.length);
     }
 
     public void walk2(int start, int... nums) {
+        System.out.println(nums.length);
     }
     //   public void walk3(int... nums, int start) { } // DOES NOT COMPILE
     //  public void walk4(int... start, int... nums) { } // DOES NOT COMPILE

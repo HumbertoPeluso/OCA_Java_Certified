@@ -9,8 +9,12 @@ public class ParameterList {
         now, let’s practice looking at method signatures with “regular” parameters:*/
     }
     public void walk1() { }
- //   public void walk2 { } // DOES NOT COMPILE
+
+ //   public void walk2 { } // DOES NOT COMPILE - there's no brackets
+
     public void walk3(int a) { }
-  //  public void walk4(int a; int b) { } // DOES NOT COMPILE
+
+  //  public void walk4(int a; int b) { } // DOES NOT COMPILE - must be comma separating parameters not semicolon
+
     public void walk5(int a, int b) { }
 }

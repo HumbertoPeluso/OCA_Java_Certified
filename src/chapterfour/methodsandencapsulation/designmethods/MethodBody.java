@@ -6,11 +6,13 @@ public class MethodBody {
    Element                       Value in nap() example                           Required?
 
    Access modifier                        public                                     No
+
    Optional specifier                     final                                      No
 
    Return type                            void                                       Yes
 
    Method name                            nap                                        Yes
+
    Parameter list                        (int minutes)                               Yes, but can be empty parentheses
 
    Optional exception list               throws InterruptedException                 No
@@ -30,6 +32,8 @@ public class MethodBody {
    }
 
     public void walk1() { }
-   // public void walk2; // DOES NOT COMPILE
+
+   // public void walk2; // DOES NOT COMPILE - is missing braces and brackets
+
     public void walk3(int a) { int name = 5; }
 }
