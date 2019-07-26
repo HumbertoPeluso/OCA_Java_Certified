@@ -1,19 +1,27 @@
 package chapterfour.methodsandencapsulation.encapsulatingdata;
 
 public class CreatingImmutableClasses {
-    /*Encapsulation means we set up the class so only methods
-            in the class with the variables can refer to the instance variables.*/
+
+    /*Encapsulating data is helpful because it prevents callers from making uncontrolled changes
+    to your class. Another common technique is making classes immutable so they cannot be
+    changed at all.*/
+
+    /*Immutable classes are helpful because you know they will always be the same. You can
+    pass them around your application with a guarantee that the caller didn’t change anything*/
 }
 
-class Swan {
-    private int numberEggs; // private
+class ImmutableSwan {
+    private int numberEggs;
 
-    public int getNumberEggs() {  // getter
+    public ImmutableSwan(int numberEggs) {
+        this.numberEggs = numberEggs;
+    }
+
+    public int getNumberEggs() {
         return numberEggs;
     }
 
-    public void setNumberEggs(int numberEggs) {  // setter
-        if(numberEggs >= 0) // guard condition
-            this.numberEggs = numberEggs;
-    }
+    //Immutable class doesn't have setter method
+
+    //be careful with the type StringBuilder
 }
