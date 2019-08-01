@@ -20,11 +20,28 @@ public class LambdaSyntax {
         /*Let’s look at some examples of valid lambdas. Pretend that there are valid interfaces that
         can consume a lambda with zero, one, or two String parameters.*/
 
-   //     print(() -> true ); // 0 parameters
-  //      print(a -> a.startsWith("test")); // 1 parameter
-      //   print((a, b) -> a.startsWith("test")); // 2 parameters
-      //  print((String a, String b) -> a.startsWith("test")); // 2 parameters
+        print(() -> true ); // 0 parameters
+       print(a -> a.startsWith("test")); // 1 parameter
+         print((a, b) -> a.startsWith("test")); // 2 parameters
+        print((String a, String b) -> a.startsWith("test")); // 2 parameters
 
+
+       // print(a, b -> a.startsWith("test")); // DOES NOT COMPILE -  needs parentheses around the parameter list
+       // print(a -> { a.startsWith("test"); }); // DOES NOT COMPILE - is missing the return keyword
+       // print(a -> { return a.startsWith("test") }); // DOES NOT COMPILE -  is missing the semicolon.
+
+      //  print((a, b) -> { int a = 0; return true;} );// DOES NOT COMPILE
+        print((a, b) -> { int c = 0; return true;}); // it uses a different variable name
+
+    }
+
+    private static void print(CheckTraitZeroParameters c) {
+    }
+
+    private static void print(CheckTraitOneParameter c) {
+    }
+
+    private static void print(CheckTraitTwoParameters c) {
     }
 
     private static void print(List<Animal> animals, CheckTrait checker) {
@@ -35,8 +52,5 @@ public class LambdaSyntax {
         System.out.println();
     }
 
-    private static void print() {
-
-    }
 
 }
