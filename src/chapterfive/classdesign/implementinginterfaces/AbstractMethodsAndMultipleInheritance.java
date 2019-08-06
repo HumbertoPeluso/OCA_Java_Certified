@@ -19,8 +19,7 @@ interface Omnivore {
 
 /*
 In this scenario, the signatures for the two interface methods eatPlants() are compatible, so you can defi ne a class
-that fulfi lls both interfaces simultaneously*/
-
+that fulfills both interfaces simultaneously*/
 class Bear implements Herbivore, Omnivore {
     public void eatMeat() {
         System.out.println("Eating meat");

@@ -6,8 +6,7 @@ public class DefiningConstructors {
     constructor. In the case of extending a class, though, things are a bit more interesting.
     In Java, the fi rst statement of every constructor is either a call to another constructor
     within the class, using this(), or a call to a constructor in the direct parent class, using
-    Introducing Class Inheritance 239
-    c05.indd 1½ 4/2014 Page 239
+    Introducing Class Inheritance
             super(). If a parent constructor takes arguments, the super constructor would also take
     arguments. For simplicity in this section, we refer to the super() command as any parent constructor, even those that take an argument. Notice the user of both super() and
 super(age)*/
@@ -36,7 +35,7 @@ super(age)*/
     public class Zoo {
         public Zoo() {
             System.out.println("Zoo created");
-          //  super(); // DOES NOT COMPILE
+          //  super(); // DOES NOT COMPILE - must be the first argument
         }
     }
 

@@ -11,7 +11,7 @@ public class OverridingVsHidingMethods {
 }
 
 class Marsupial {
-    public static boolean isBiped() { //  returns false
+    public static boolean isBiped() { //hidden version -  returns false
         return false;
     }
     public void getMarsupialDescription() { // executes a method of isBiped(), which hides the parent method’s version and returns true
@@ -49,12 +49,12 @@ class Marsupial2 {
 class Kangaroo2 extends Marsupial2 {
     public boolean isBiped() { //  is overridden, not hidden, in the child class
         return true;
-    }
+    } // Overriden version
     public void getKangarooDescription() {
         System.out.println("Kangaroo hops on two legs: "+isBiped());
     }
     public static void main(String[] args) {
-        Kangaroo joey = new Kangaroo();
+        Kangaroo2 joey = new Kangaroo2();
         joey.getMarsupialDescription();
         joey.getKangarooDescription();
     }
